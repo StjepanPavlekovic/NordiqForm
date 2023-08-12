@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nordiq</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="wrapper">
+            <div class="left">
+                <div class="logo-container">
+                    <h1 class="logo-text">Nordiq Trails</h1>
+                </div>
+                <a
+                    class="image-credits"
+                    target="_blank"
+                    href="https://unsplash.com/photos/a-man-walking-across-a-wooden-bridge-over-a-forest-akx7Yvxdo5w?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink"
+                >
+                    Image by Ali Kazal
+                </a>
+            </div>
+            <form class="right" id="registerForm" method="POST">
+                <div class="form-heading">
+                    <p>
+                        This is not a real online service! You know you need
+                        something like this in your life to help you realize
+                        your deepest dreams. <br />Sign up <em>now</em> to get
+                        started.
+
+                        <br /><br />
+                        You <em>know</em> you want to.
+                    </p>
+                </div>
+
+                <div class="form-content">
+                    <p>Let's do this!</p>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="firstName">FIRST NAME</label>
+                            <input
+                                id="firstName"
+                                type="text"
+                                name="firstName"
+                            />
+                            <div class="error"></div>
+                        </div>
+                        <div class="form-input">
+                            <label for="lastName">LAST NAME</label>
+                            <input id="lastName" type="text" name="lastName" />
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="email">EMAIL</label>
+                            <input id="email" type="email" name="email" />
+                            <div class="error"></div>
+                        </div>
+                        <div class="form-input">
+                            <label for="phone">PHONE</label>
+                            <input
+                                id="phone"
+                                type="text"
+                                maxlength="20"
+                                name="phone"
+                            />
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-input">
+                            <label for="password">PASSWORD</label>
+                            <input
+                                id="password"
+                                type="password"
+                                name="password"
+                                maxlength="24"
+                                minlength="10"
+                            />
+                            <div class="error" style="bottom: -30px"></div>
+                        </div>
+                        <div class="form-input">
+                            <label for="confirmPassword"
+                                >CONFIRM PASSWORD</label
+                            >
+                            <input
+                                id="confirmPassword"
+                                type="password"
+                                name="confirmPassword"
+                            />
+                            <div class="error"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <input
+                        id="btnSubmit"
+                        name="btnSubmit"
+                        class="btnSubmit"
+                        type="submit"
+                        value="Create account"
+                    />
+                    <p>
+                        Already have an account?
+                        <a href="#" class="login">Log in</a>
+                    </p>
+                </div>
+            </form>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
